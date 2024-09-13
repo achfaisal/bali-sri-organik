@@ -1,22 +1,17 @@
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import TitleOne from "../Title/titleOne";
 
 const Section1 = () => {
+  const t = useTranslations("HomeSectionOne");
   return (
     <section>
       <div className="container mx-auto px-4">
         <div className="mb-8">
-          <h1 className="sm:text-7xl text-6xl my-10 font-bold">
-            Pertanian <span className="text-green-600">organik</span>
-            <span>.</span>
-          </h1>
-          <p className="leading-7">
-            Bertani organik merupakan bertani selaras dengan alam , dengan
-            menggunakan bahan yang tersedia dari alam dan menghindari atau
-            membatasi bahan kimia sintetis, dengan tujuan menyediakan produk -
-            produk pertanian yang aman bagi kesehatan serta menjaga keseimbangan
-            lingkungan dan siklus alamnya dengan memegang 4 prinsip organik.
-          </p>
+          <TitleOne />
+          {/* <h1 className="text-7xl my-10 font-bold">{t("title")}</h1> */}
+          <p className="leading-7">{t("description")}</p>
         </div>
       </div>
       <div className="w-full">

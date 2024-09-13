@@ -1,0 +1,37 @@
+{
+  "HomeSectionOne": {
+    "title": "Organic Farming.",
+    "description": "Organic farming is farming in harmony with nature, using materials available from nature and avoiding or limiting synthetic chemicals, with the goal of providing agricultural products that are safe for health and maintaining environmental balance and natural cycles, while adhering to the 4 principles of organic farming."
+  },
+  "HomeSectionTwo": {
+    "title": "Advantages of Organic Farming in Bali",
+    "description": [
+      "Very high export potential due to the many international tourists and events.",
+      "A strong cultural heritage makes it easier to apply the concept of organic farming.",
+      "Support from the Bali provincial government with the passing of a law declaring Bali as an organic island.",
+      "The Subak irrigation system, which is a world heritage.",
+      "Vast agricultural land, approximately 150,000 hectares."
+    ]
+  },
+  "About": {
+    "about": "About in Indonesian language"
+  },
+  "Timeline": [
+    {
+      "year": "2012 - 2016",
+      "content": "Initial exploration phase for land search and farmer approach, with significant resistance from farmers to switch to organic farming. Finally, in 2014, the first farmers willing to switch were from Klungkung Regency and Karangasem Regency. In 2015, a cooperation contract was obtained with Subak Sangeh, starting with a total area of 5 hectares."
+    },
+    {
+      "year": "2017 - 2020",
+      "content": "In 2017, PT. Bali Sri Organik was established with the goal of representing Indonesia in the field of organic agriculture. The first organic certificate was issued by LEsos for Subak Sangeh. A rice warehouse and integrated production facility were built in Sangeh Village. Support in the form of agricultural machinery was provided by the government."
+    },
+    {
+      "year": "2021 - 2023",
+      "content": "After 5 national certificates were issued by 2020, in this phase, there are 3 nationally certified Subaks and 1 internationally certified Subak. Distribution of products has been established through cooperation with several national and international distributors. A color sorter machine was introduced to maximize product quality."
+    },
+    {
+      "year": "2024",
+      "content": "With nearly 200 hectares of certified land and approximately 800,000 kg of annual production, we are striving to make Bali the first organic island in the world, focusing on downstream processing with sustainable and environmentally friendly methods."
+    }
+  ]
+}

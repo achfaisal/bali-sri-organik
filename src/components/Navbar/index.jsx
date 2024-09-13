@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import LanguageSwitcher from "../LanguageSwitcher";
 
 const NavbarComponent = () => {
   return (
@@ -24,16 +25,18 @@ const NavbarComponent = () => {
             </div>
           </Link>
         </div>
-        <div className="navbar-end flex">
+        <div className="navbar-end flex items-center">
           <ul className="menu menu-horizontal px-1 items-center">
             <li>
-              <a className="hidden sm:flex">Products</a>
+              <Link className="hidden sm:flex" href={"/products"}>
+                Products
+              </Link>
             </li>
             <li>
               <a className="hidden sm:flex">Contact Us</a>
             </li>
-            <li>
-              <a className="flex sm:hidden">
+            <li className="flex sm:hidden">
+              <a>
                 <button className="justify-end">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -52,6 +55,7 @@ const NavbarComponent = () => {
               </a>
             </li>
           </ul>
+          <LanguageSwitcher className="hidden sm:flex" />
         </div>
       </div>
     </div>

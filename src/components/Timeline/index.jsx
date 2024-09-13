@@ -1,9 +1,11 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import timelineItems from "@/data/timelineItems.json";
+import { useTranslations } from "next-intl";
 
 const Timeline = () => {
   const timelineItemsRef = useRef([]);
+
+  const t = useTranslations();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -33,15 +35,14 @@ const Timeline = () => {
   return (
     <section className="container mx-auto px-4">
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical my-10">
-        {timelineItems.map((item, index) => (
+        {t.raw("Timeline").map((item, index) => (
           <li
             key={index}
             className="fade-in-section"
             ref={(el) => (timelineItemsRef.current[index] = el)}
           >
-            {/* Exclude hr for the first item */}
             {index !== 0 && <hr />}
-            {/* --- */}
+
             <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,18 +62,17 @@ const Timeline = () => {
                 index % 2 === 0 ? "timeline-start md:text-end" : "timeline-end"
               }`}
             >
-              <div className="text-3xl font-black">{item.period}</div>
+              <div className="text-3xl font-black">{item.year}</div>
               <p
                 className={`${
-                  index === timelineItems.length - 1 ? "mb-0" : "mb-6"
+                  index === t.raw("Timeline").length - 1 ? "mb-0" : "mb-6"
                 }`}
               >
                 {item.content}
               </p>
             </div>
-            {/* Exclude hr for the last item */}
-            {index !== timelineItems.length - 1 && <hr />}
-            {/* --- */}
+
+            {index !== t.raw("Timeline").length - 1 && <hr />}
           </li>
         ))}
       </ul>
