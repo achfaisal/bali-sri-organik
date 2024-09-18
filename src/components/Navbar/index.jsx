@@ -15,12 +15,14 @@ const NavbarComponent = () => {
                 width={1000}
                 height={300}
                 className="w-[50px] ml-4"
+                alt="logo-bali-sri-organik"
               />
               <Image
                 src="/images/tulisan-bso.svg"
                 width={1000}
                 height={300}
                 className="w-[150px] ml-1"
+                alt="logo-bali-sri-organik"
               />
             </div>
           </Link>
@@ -55,7 +57,9 @@ const NavbarComponent = () => {
               </a>
             </li>
           </ul>
-          <LanguageSwitcher className="hidden sm:flex" />
+          <div className="hidden sm:flex">
+            <LanguageSwitcher />
+          </div>
         </div>
       </div>
     </div>

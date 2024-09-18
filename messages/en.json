@@ -33,5 +33,19 @@
       "year": "2024",
       "content": "With nearly 200 hectares of certified land and approximately 800,000 kg of annual production, we are striving to make Bali the first organic island in the world, focusing on downstream processing with sustainable and environmentally friendly methods."
     }
+  ],
+  "Products": [
+    {
+      "product": "Beras Organik",
+      "description": "Ini adalah deskripsi beras organik ENG"
+    },
+    {
+      "product": "Beras Merah",
+      "description": "Ini adalah deskripsi beras merah ENG"
+    },
+    {
+      "product": "Beras Hitam",
+      "description": "Ini adalah deskripsi beras hitam ENG"
+    }
   ]
 }

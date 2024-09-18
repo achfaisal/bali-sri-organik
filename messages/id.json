@@ -30,5 +30,19 @@
       "year": "2024",
       "content": "Dengan total lahan hampir 200 Ha yang tersertifikasi dan +/- 800.000kg hasil produksi pertahun , kami mencoba untuk mewujudkan Bali  menjadi Pulau Organik pertama di Dunia dengan fokus hilirisasi dengen metode sustainable dan ramah lingkungan."
     }
+  ],
+  "Products": [
+    {
+      "product": "Beras Organik",
+      "description": "Ini adalah deskripsi beras organik"
+    },
+    {
+      "product": "Beras Merah",
+      "description": "Ini adalah deskripsi beras merah"
+    },
+    {
+      "product": "Beras Hitam",
+      "description": "Ini adalah deskripsi beras hitam"
+    }
   ]
 }

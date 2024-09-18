@@ -22,6 +22,7 @@ const Section2 = () => {
                 height={100}
                 width={100}
                 className="bg-green-900 p-2 rounded-lg"
+                alt="worldwide-icon"
               />
               <p>{t("description.0")}</p>
             </div>
@@ -31,6 +32,7 @@ const Section2 = () => {
                 height={100}
                 width={100}
                 className="bg-green-900 p-2 rounded-lg"
+                alt="cultural-icon"
               />
               <p>{t("description.1")}</p>
             </div>
@@ -40,6 +42,7 @@ const Section2 = () => {
                 height={100}
                 width={100}
                 className="bg-green-900 p-2 rounded-lg"
+                alt="support-icon"
               />
               <p>{t("description.2")}</p>
             </div>
@@ -52,6 +55,7 @@ const Section2 = () => {
                 height={100}
                 width={100}
                 className="bg-green-900 p-2 rounded-lg"
+                alt="droplet-icon"
               />
               <p>{t("description.3")}</p>
             </div>
@@ -61,6 +65,7 @@ const Section2 = () => {
                 height={100}
                 width={100}
                 className="bg-green-900 p-2 rounded-lg"
+                alt="land-icon"
               />
               <p>{t("description.4")}</p>
             </div>

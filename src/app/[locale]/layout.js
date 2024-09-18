@@ -3,7 +3,7 @@ import { Nunito } from "next/font/google";
 import "@/app/globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import CheckRoute from "@/components/CheckRoute";
+import NavbarComponent from "@/components/Navbar";
 
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
@@ -40,6 +40,7 @@ export default async function RootLayout({ children, params: { locale } }) {
     <html data-theme="light" lang={locale}>
       <body className={`${nunito.className} antialiased`}>
         <NextIntlClientProvider messages={messages}>
+          <NavbarComponent />
           {children}
         </NextIntlClientProvider>
       </body>

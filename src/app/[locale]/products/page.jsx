@@ -4,7 +4,6 @@ import React from "react";
 const Products = () => {
   return (
     <div>
-      <NavbarComponent />
       <p>Products</p>
     </div>
   );
