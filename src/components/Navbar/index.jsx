@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import LanguageSwitcher from "../LanguageSwitcher";
+import Drawer from "../Drawer";
 
 const NavbarComponent = () => {
   return (
@@ -21,7 +22,7 @@ const NavbarComponent = () => {
                 src="/images/tulisan-bso.svg"
                 width={1000}
                 height={300}
-                className="w-[150px] ml-1"
+                className="w-[150px] ml-1 hidden sm:block"
                 alt="logo-bali-sri-organik"
               />
             </div>
@@ -37,28 +38,15 @@ const NavbarComponent = () => {
             <li>
               <a className="hidden sm:flex">Contact Us</a>
             </li>
-            <li className="flex sm:hidden">
-              <a>
-                <button className="justify-end">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    className="inline-block h-5 w-5 stroke-current"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    ></path>
-                  </svg>
-                </button>
-              </a>
-            </li>
           </ul>
-          <div className="hidden sm:flex">
-            <LanguageSwitcher />
+
+          <div className="flex items-center">
+            <div>
+              <LanguageSwitcher />
+            </div>
+            <div className="mr-4">
+              <Drawer />
+            </div>
           </div>
         </div>
       </div>
