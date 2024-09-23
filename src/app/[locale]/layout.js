@@ -1,11 +1,9 @@
 import localFont from "next/font/local";
-import { Nunito } from "next/font/google";
 import "@/app/globals.css";
+import { Nunito } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import NavbarComponent from "@/components/Navbar";
-
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",

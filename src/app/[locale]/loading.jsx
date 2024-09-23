@@ -1,8 +1,8 @@
-import React from "react";
-
 const loading = () => {
   return (
-    <div className="text-4xl font-bold">LOADING SITE, PLEASE WAIT....</div>
+    <div className="">
+      <span className="loading loading-spinner loading-"></span>
+    </div>
   );
 };
 

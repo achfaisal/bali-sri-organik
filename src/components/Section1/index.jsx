@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import TitleOne from "../Title/titleOne";
@@ -10,8 +9,7 @@ const Section1 = () => {
       <div className="container mx-auto px-4">
         <div className="mb-8">
           <TitleOne />
-          {/* <h1 className="text-7xl my-10 font-bold">{t("title")}</h1> */}
-          <p className="leading-7">{t("description")}</p>
+          <p className="leading-7 text-lg font-medium">{t("description")}</p>
         </div>
       </div>
       <div className="w-full">

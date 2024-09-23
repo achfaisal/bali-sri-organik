@@ -36,16 +36,16 @@
   ],
   "Products": [
     {
-      "product": "Beras Organik",
+      "product": "Beras Menthik Susu",
       "description": "Mentik Wangi Susu rice is an organic rice. This premium local rice is grown from local paddy seeds without genetic modification (GMO) and is cultivated organically without the use of pesticides or other chemicals. Additionally, this rice has more complete nutritional content, with relatively high fiber and well-preserved minerals. Therefore, the quality of this rice is better, safer, and healthier."
     },
     {
       "product": "Beras Merah",
-      "description": "Ini adalah deskripsi beras merah ENG"
+      "description": "Red rice is one type of rice that contains high nutritional value and offers more health benefits compared to white rice. One of the advantages of red rice over white rice lies in its nutritional composition. Important nutrients such as fiber, essential fatty acids, B-complex vitamins, and minerals are found in the bran layer of red rice. The antioxidants present in red rice also play an important role in combating free radicals in the body."
     },
     {
-      "product": "Beras Hitam",
-      "description": "Ini adalah deskripsi beras hitam ENG"
+      "product": "Beras Putih",
+      "description": "Organic rice is softer compared to non-organic rice. Its aroma is also different, with organic rice having a more pleasant fragrance. When cooked, organic rice cooks faster and requires less water. Organic rice contains high levels of nutrients, glucose, carbohydrates, and protein. On the other hand, non-organic rice contains harmful pesticides and has lower protein content. In terms of shelf life, organic rice lasts longer."
     }
   ]
 }
