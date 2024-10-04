@@ -4,6 +4,7 @@ import { Nunito } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import NavbarComponent from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -36,10 +37,18 @@ export default async function RootLayout({ children, params: { locale } }) {
 
   return (
     <html data-theme="light" lang={locale}>
-      <body className={`${nunito.className} antialiased`}>
+      <body
+        className={`${nunito.className} antialiased min-h-screen flex flex-col`}
+      >
         <NextIntlClientProvider messages={messages}>
+          {/* Navbar stays at the top */}
           <NavbarComponent />
-          {children}
+
+          {/* Main content area will grow to take up remaining space */}
+          <main className="flex-grow">{children}</main>
+
+          {/* Footer will always stay at the bottom */}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

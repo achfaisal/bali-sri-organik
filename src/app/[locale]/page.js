@@ -13,14 +13,6 @@ export default function Home() {
 
       <Timeline />
       <Section3 />
-
-      <section id="footer">
-        <footer className="footer footer-center bg-slate-700 text-white p-4">
-          <aside>
-            <p>Copyright © {new Date().getFullYear()} - Bali Sri Organik</p>
-          </aside>
-        </footer>
-      </section>
     </>
   );
 }

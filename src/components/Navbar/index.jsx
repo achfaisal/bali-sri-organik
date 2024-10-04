@@ -1,8 +1,8 @@
-import React from "react";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import LanguageSwitcher from "../LanguageSwitcher";
 import Drawer from "../Drawer";
+import Dropdown from "../Dropdown";
 
 const NavbarComponent = () => {
   return (
@@ -28,25 +28,22 @@ const NavbarComponent = () => {
             </div>
           </Link>
         </div>
-        <div className="navbar-end flex items-center">
-          <ul className="menu menu-horizontal px-1 items-center">
-            <li>
-              <Link className="hidden sm:flex" href={"/products"}>
-                Products
-              </Link>
-            </li>
-            <li>
-              <a className="hidden sm:flex">Contact Us</a>
-            </li>
-          </ul>
 
-          <div className="flex items-center">
-            <div>
-              <LanguageSwitcher />
+        <div className="flex items-center navbar-end">
+          <div className="sm:flex hidden items-center">
+            <Dropdown />
+            <div
+              role="button"
+              className="btn m-1 bg-white border-0 shadow-none text-green-700"
+            >
+              <Link href="/contact-us">Contact Us</Link>
             </div>
-            <div className="mr-4">
-              <Drawer />
-            </div>
+          </div>
+          <div>
+            <LanguageSwitcher />
+          </div>
+          <div className="mr-4">
+            <Drawer />
           </div>
         </div>
       </div>

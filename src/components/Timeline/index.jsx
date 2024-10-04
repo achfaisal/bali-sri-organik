@@ -34,6 +34,9 @@ const Timeline = () => {
 
   return (
     <section className="container mx-auto px-4">
+      <h1 className="text-center mt-10 text-4xl font-extrabold">
+        Mile<span className="text-slate-700">stone</span>
+      </h1>
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical my-10">
         {t.raw("Timeline").map((item, index) => (
           <li

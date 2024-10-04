@@ -10,7 +10,6 @@ const Section2 = () => {
   return (
     <section className="bg-[url('/images/background.png')] bg-no-repeat bg-bottom sm:min-h-[900px] lg:min-h-[750px] min-h-[1400px]">
       <div className="text-center w-screen container mx-auto px-4 mt-10">
-        {/* <h1 className="text-4xl font-extrabold mt-6 my-12">{t("title")}</h1> */}
         <TitleTwo />
 
         {/* Map description */}

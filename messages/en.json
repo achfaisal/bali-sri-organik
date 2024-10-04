@@ -1,7 +1,12 @@
 {
+  "Navbar": {
+    "products": "Products",
+    "product-one": "Rice Products",
+    "contact": "Contact Us"
+  },
   "HomeSectionOne": {
     "title": "Organic Farming.",
-    "description": "Organic farming is farming in harmony with nature, using materials available from nature and avoiding or limiting synthetic chemicals, with the goal of providing agricultural products that are safe for health and maintaining environmental balance and natural cycles, while adhering to the 4 principles of organic farming."
+    "description": "Organic farming is farming in harmony with nature, using materials avai lable from nature and avoiding or limiting synthetic chemicals, with the goal of providing agricultural products that are safe for health and maintaining environmental balance and natural cycles, while adhering to the 4 principles of organic farming."
   },
   "HomeSectionTwo": {
     "title": "Advantages of Organic Farming in Bali",
@@ -36,15 +41,18 @@
   ],
   "Products": [
     {
-      "product": "Beras Menthik Susu",
+      "product": "Menthik Susu Rice",
+      "link": "beras-menthik-susu",
       "description": "Mentik Wangi Susu rice is an organic rice. This premium local rice is grown from local paddy seeds without genetic modification (GMO) and is cultivated organically without the use of pesticides or other chemicals. Additionally, this rice has more complete nutritional content, with relatively high fiber and well-preserved minerals. Therefore, the quality of this rice is better, safer, and healthier."
     },
     {
-      "product": "Beras Merah",
+      "product": "Red Rice",
+      "link": "beras-merah",
       "description": "Red rice is one type of rice that contains high nutritional value and offers more health benefits compared to white rice. One of the advantages of red rice over white rice lies in its nutritional composition. Important nutrients such as fiber, essential fatty acids, B-complex vitamins, and minerals are found in the bran layer of red rice. The antioxidants present in red rice also play an important role in combating free radicals in the body."
     },
     {
-      "product": "Beras Putih",
+      "product": "White Rice",
+      "link": "beras-putih",
       "description": "Organic rice is softer compared to non-organic rice. Its aroma is also different, with organic rice having a more pleasant fragrance. When cooked, organic rice cooks faster and requires less water. Organic rice contains high levels of nutrients, glucose, carbohydrates, and protein. On the other hand, non-organic rice contains harmful pesticides and has lower protein content. In terms of shelf life, organic rice lasts longer."
     }
   ]
