@@ -19,10 +19,6 @@ const Dropdown = () => {
     setIsOpen(false);
   };
 
-  useEffect(() => {
-    console.log(products);
-  }, [products]);
-
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -39,13 +35,13 @@ const Dropdown = () => {
 
   return (
     <div
-      className={`dropdown ${isOpen ? "dropdown-open" : ""}`}
+      className={`dropdown dropdown-hover ${isOpen ? "dropdown-open" : ""}`}
       ref={dropdownRef}
     >
       <div
         tabIndex={0}
         role="button"
-        className="btn bg-white border-0 shadow-none text-green-700"
+        className="border-0 shadow-none"
         onClick={toggleDropdown}
       >
         <div className="flex items-center">
@@ -57,7 +53,7 @@ const Dropdown = () => {
         <div>
           <ul
             tabIndex={0}
-            className="dropdown-content menu bg-base-200 z-[1] p-2 shadow rounded-box w-56"
+            className="dropdown-content menu bg-base-200 z-[1] p-2 shadow rounded-box w-56 mt-3 text-black"
           >
             <li>
               <a className="btn-disabled font-semibold">

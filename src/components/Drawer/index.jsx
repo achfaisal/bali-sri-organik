@@ -2,8 +2,12 @@
 
 import React from "react";
 import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "../LanguageSwitcher";
 
 const Drawer = () => {
+  const t = useTranslations();
+  const navbarData = t.raw("Navbar");
   const closeDrawer = () => {
     const drawerCheckbox = document.getElementById("my-drawer");
     if (drawerCheckbox) {
@@ -11,11 +15,16 @@ const Drawer = () => {
     }
   };
 
+  const onSelectChange = (e) => {
+    const nextLocale = e.target.value;
+    router.replace(`/${nextLocale}/${editedPathname}`);
+  };
+
   return (
-    <div className="drawer flex sm:hidden">
+    <div className="drawer flex">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
-        <label htmlFor="my-drawer" className="bg-white ml-2">
+        <label htmlFor="my-drawer" className="bg-transparent ml-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -44,29 +53,46 @@ const Drawer = () => {
                 Home
               </Link>
             </li>
-            <li>
+
+            {navbarData.map((navbar) => (
+              <li key={navbar.title}>
+                <Link
+                  className="hover:text-green-500"
+                  key={navbar.title}
+                  href={navbar.link}
+                >
+                  {navbar.title}
+                </Link>
+              </li>
+            ))}
+            <p>(Tombol sementara, masih mencong)</p>
+            <LanguageSwitcher />
+            {/* <li>
               <details open>
-                <summary>Products</summary>
+                <summary>Language</summary>
                 <ul>
                   <li>
-                    <Link
-                      href={"/products/beras-organik"}
-                      onClick={closeDrawer}
+                    <a
+                      onClick={() =>
+                        onSelectChange({ target: { value: "en" } })
+                      }
                     >
-                      Beras Organik
-                    </Link>
+                      English
+                    </a>
                   </li>
                   <li>
-                    <Link href={"/products/beras-merah"} onClick={closeDrawer}>
-                      Beras Merah
-                    </Link>
+                    <a
+                      className="text-nowrap"
+                      onClick={() =>
+                        onSelectChange({ target: { value: "id" } })
+                      }
+                    >
+                      Bahasa Indonesia
+                    </a>
                   </li>
                 </ul>
               </details>
-            </li>
-            <li>
-              <a onClick={closeDrawer}>Contact Us</a>
-            </li>
+            </li> */}
           </ul>
         </ul>
       </div>

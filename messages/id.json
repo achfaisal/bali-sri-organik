@@ -1,9 +1,14 @@
 {
-  "Navbar": {
-    "products": "Produk",
-    "product-one": "Produk Beras",
-    "contact": "Kontak Kami"
-  },
+  "Navbar": [
+    { "title": "Tentang Kami", "link": "/about-us" },
+    { "title": "Pupuk & Benih", "link": "/coming-soon" },
+    { "title": "Layanan Pertanian", "link": "/coming-soon" },
+    { "title": "Beras Konversi", "link": "/coming-soon" },
+    { "title": "Beras Organik", "link": "/coming-soon" },
+    { "title": "Terrice", "link": "/coming-soon" },
+    { "title": "Siap Santap", "link": "/coming-soon" },
+    { "title": "Hubungi Kami", "link": "/coming-soon" }
+  ],
   "HomeSectionOne": {
     "title": "Pertanian Organik.",
     "description": "Bertani organik merupakan bertani selaras dengan alam , dengan menggunakan bahan yang tersedia dari alam dan menghindari atau membatasi bahan kimia sintetis, dengan tujuan menyediakan produk - produk pertanian yang aman bagi kesehatan serta menjaga keseimbangan lingkungan dan siklis alamnya. dengan memegang 4 prinsip organik."
@@ -34,6 +39,58 @@
     {
       "year": "2024",
       "content": "Dengan total lahan hampir 200 Ha yang tersertifikasi dan +/- 800.000kg hasil produksi pertahun , kami mencoba untuk mewujudkan Bali  menjadi Pulau Organik pertama di Dunia dengan fokus hilirisasi dengen metode sustainable dan ramah lingkungan."
+    }
+  ],
+  "AboutUs": {
+    "title": "Tentang Kami",
+    "description": "PT. Bali Sri Organik mulai berdiri semenjak tahun 2012 dan merupakan bagian dari Medco Group yang bergerak di bidang pertanian yang berusaha untuk menjadi produsen organik yang andal di Indonesia khususnya di Bali.\nPerubahan penggunaan lahan, meningkatnya populasi, penggunaan pupuk anorganik yang membuat kesuburan tanah menurun, kurangnya kesejahterahan petani dan minimnya informasi tentang penanaman dengan cara organik, peningkatan turis setiap tahunnya, dan program pemerintah Bali Go Organic.\nHal tersebut yang memicu kami ingin ikut serta dalam menangani masalah tersebut. Dimulai dari riset dan survey yang cermat, teliti dan dilakukan oleh orang yang ahli akhirnya tahun 2012 PT. Bali Sri Organik berdiri.",
+    "Vision-mission": "Visi dan Misi",
+    "Vision": "Visi",
+    "Mission": "Misi",
+    "Vision-description": " Menjadi perusahaan yang dapat memenuhi kebutuhan pangan organik yang bermutu, dan menjadi perusahaan yang dapat mensejahterakan hidup petani",
+    "Mission-description": " Menjadi perusahaan transnasional yang dapat membawa nama Indonesia ke manca negara khususnya dalam bidang pertanian organik.",
+    "Raw-material": "Menyediakan Bahan Baku Berkualitas",
+    "Raw-material-description": "Bersama dengan pemerintah dan pakar kami menyediakan bahan baku dasar seperti bibit dan pupuk yang berkualitas dan ramah lingkungan.",
+    "Farming-tools": "Mekanisasi Mesin Alat Pertanian yang Ramah Lingkungan",
+    "Farming-tools-description": "Mendukung program rendah emisi semenjak tahun 2022, kami sudah menggunakan listrik dan tidak menggunakan bahan bakar minyak untuk kegiatan pertanian organik kami",
+    "Certificate": "Sertifikasi",
+    "Certificate-description": "Semenjak 2017 kami sudah mendapatkan sertifikat bertaraf Nasional dan Internasional."
+  },
+  "Certificate": [
+    {
+      "id": "1",
+      "name": "Sertifikat LeSOS",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1lIPBFhDQwy5LDzSsigFSHWTy2oBrmGoU"
+    },
+    {
+      "id": "2",
+      "name": "Sertifikat Internasional EU & IFOAM",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=11YAx6ZVZdht4664e7wqbNMvesFZ_Kgrc"
+    },
+    {
+      "id": "3",
+      "name": "Sertifikat Organik Nasional ICERT",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1SjChY5v_CoCZXQd-6bZeRLsb5pQRyfLP"
+    },
+    {
+      "id": "4",
+      "name": "Sertifikat Pelatih",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1gZzm85FxmGfKW-PqP8LnIIMg7x-AFQhS"
+    },
+    {
+      "id": "5",
+      "name": "Sertifikat PSAT",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=16TQlbUtZEWYxPudEpfKWmjG3pouT3dSi"
+    },
+    {
+      "id": "6",
+      "name": "Sertifikat Uji Beras Organik",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1ekxj3-m9H4TG3oVS1DPm210c1TjZZPsE"
+    },
+    {
+      "id": "7",
+      "name": "Sertifikat SUCOFINDO",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1FhXEoUrCylqtDeZHRQQN2eYEUe5ti3E8"
     }
   ],
   "Products": [

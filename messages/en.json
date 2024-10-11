@@ -1,9 +1,14 @@
 {
-  "Navbar": {
-    "products": "Products",
-    "product-one": "Rice Products",
-    "contact": "Contact Us"
-  },
+  "Navbar": [
+    { "title": "About Us", "link": "/about-us" },
+    { "title": "Fertilizer & Seeds", "link": "/coming-soon" },
+    { "title": "Agricultural Services", "link": "/coming-soon" },
+    { "title": "Conversion Rice", "link": "/coming-soon" },
+    { "title": "Organic Rice", "link": "/coming-soon" },
+    { "title": "Terrice", "link": "/coming-soon" },
+    { "title": "Ready to Eat", "link": "/coming-soon" },
+    { "title": "Contact Us", "link": "/coming-soon" }
+  ],
   "HomeSectionOne": {
     "title": "Organic Farming.",
     "description": "Organic farming is farming in harmony with nature, using materials avai lable from nature and avoiding or limiting synthetic chemicals, with the goal of providing agricultural products that are safe for health and maintaining environmental balance and natural cycles, while adhering to the 4 principles of organic farming."
@@ -17,9 +22,6 @@
       "The Subak irrigation system, which is a world heritage.",
       "Vast agricultural land, approximately 150,000 hectares."
     ]
-  },
-  "About": {
-    "about": "About in Indonesian language"
   },
   "Timeline": [
     {
@@ -39,6 +41,59 @@
       "content": "With nearly 200 hectares of certified land and approximately 800,000 kg of annual production, we are striving to make Bali the first organic island in the world, focusing on downstream processing with sustainable and environmentally friendly methods."
     }
   ],
+  "AboutUs": {
+    "title": "About Us",
+    "description": "PT. Bali Sri Organik was established in 2012 and is part of the Medco Group, operating in the agricultural sector with the goal of becoming a reliable organic producer in Indonesia, especially in Bali. \nFactors such as land use changes, increasing population, the use of inorganic fertilizers that reduce soil fertility, the lack of farmer welfare, limited information about organic farming methods, the increase in tourists each year, and the Bali Go Organic government program motivated us to contribute to addressing these issues.\nAfter careful and thorough research and surveys conducted by experts, PT. Bali Sri Organik was founded in 2012.",
+    "Vision-mission": "Vision and Mission",
+    "Vision": "Vision",
+    "Mission": "Mission",
+    "Vision-description": "To become a company that can meet the needs for high-quality organic food, and a company that can improve the welfare of farmers.",
+    "Mission-description": "To become a transnational company that can bring Indonesia's name to the international stage, particularly in the field of organic agriculture.",
+    "Raw-material": "Providing Quality Raw Materials",
+    "Raw-material-description": "Together with the government and our experts, we provide quality and environmentally friendly raw materials such as seeds and fertilizers.",
+    "Farming-tools": "Mechanization of Environmentally Friendly Farming Tools",
+    "Farming-tools-description": "Supporting low-emission programs since 2022, we have been using electricity and not using fossil fuels for our organic farming activities.",
+    "Certificate": "Certification",
+    "Certificate-description": "Since 2017, we have obtained both National and International standard certifications."
+  },
+  "Certificate": [
+    {
+      "id": "1",
+      "name": "LeSOS Certificate",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1lIPBFhDQwy5LDzSsigFSHWTy2oBrmGoU"
+    },
+    {
+      "id": "2",
+      "name": "International Certificate EU & IFOAM",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=11YAx6ZVZdht4664e7wqbNMvesFZ_Kgrc"
+    },
+    {
+      "id": "3",
+      "name": "National Organic Certificate ICERT",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1SjChY5v_CoCZXQd-6bZeRLsb5pQRyfLP"
+    },
+    {
+      "id": "4",
+      "name": "Trainer Certificate",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1gZzm85FxmGfKW-PqP8LnIIMg7x-AFQhS"
+    },
+    {
+      "id": "5",
+      "name": "PSAT Certificate",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=16TQlbUtZEWYxPudEpfKWmjG3pouT3dSi"
+    },
+    {
+      "id": "6",
+      "name": "Organic Rice Test Certificate",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1ekxj3-m9H4TG3oVS1DPm210c1TjZZPsE"
+    },
+    {
+      "id": "7",
+      "name": "SUCOFINDO Certificate",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1FhXEoUrCylqtDeZHRQQN2eYEUe5ti3E8"
+    }
+  ],
+
   "Products": [
     {
       "product": "Menthik Susu Rice",

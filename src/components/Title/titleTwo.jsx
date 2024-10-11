@@ -4,7 +4,7 @@ import { useLocale } from "next-intl";
 const TitleTwo = () => {
   const localActive = useLocale();
   return (
-    <div className="text-4xl font-extrabold mt-6 my-12">
+    <div className="text-4xl font-extrabold my-20">
       {localActive === "id" ? (
         <p>
           Keunggulan Pertanian <span className="text-green-500">Organik</span>{" "}

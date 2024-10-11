@@ -1,13 +1,10 @@
-// components/LanguageSwitcher.js
-"use client";
-
 import { useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
 import { Translate } from "@phosphor-icons/react";
 import DropdownIcon from "../Icons/Dropdown";
 
-const LanguageSwitcher = () => {
+const LanguageSwitcher = ({ isScrolled }) => {
   const router = useRouter();
   const localActive = useLocale();
   const pathname = usePathname();
@@ -26,29 +23,27 @@ const LanguageSwitcher = () => {
         <div className="dropdown dropdown-bottom dropdown-end">
           <div
             tabIndex={0}
-            className="btn m-1 bg-white font-normal rounded-full"
+            className={`p-2 m-1 font-normal rounded-full cursor-pointer ${
+              isScrolled
+                ? "bg-black/10 hover:bg-black/20"
+                : "bg-white/10 hover:bg-white/20"
+            } backdrop-blur-sm transition-all duration-75`}
           >
-            {localActive === "en" ? (
-              <div className="flex">
-                <Translate />
-                <span className="mx-2">EN</span>
-                <span>
-                  <DropdownIcon />
-                </span>
-              </div>
-            ) : (
-              <div className="flex">
-                <Translate />
+            <div className="flex items-center">
+              <Translate />
+              {localActive === "en" ? (
+                <span className="mx-2"> EN</span>
+              ) : (
                 <span className="mx-2">ID</span>
-                <span>
-                  <DropdownIcon />
-                </span>
-              </div>
-            )}
+              )}
+              <span>
+                <DropdownIcon />
+              </span>
+            </div>
           </div>
           <ul
             tabIndex={0}
-            className="dropdown-content menu bg-base-200 rounded-box z-[1] w-40 p-2 shadow"
+            className="dropdown-content menu bg-base-200 rounded-box z-[1] w-40 p-2 shadow text-black"
           >
             <li>
               <a onClick={() => onSelectChange({ target: { value: "en" } })}>
@@ -56,7 +51,10 @@ const LanguageSwitcher = () => {
               </a>
             </li>
             <li>
-              <a onClick={() => onSelectChange({ target: { value: "id" } })}>
+              <a
+                className="text-nowrap"
+                onClick={() => onSelectChange({ target: { value: "id" } })}
+              >
                 Bahasa Indonesia
               </a>
             </li>

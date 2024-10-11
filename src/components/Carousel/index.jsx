@@ -1,60 +1,101 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
+import Image from "next/image";
 
 const Carousel = () => {
+  const images = [
+    "/images/visi.jpg",
+    "/images/background-products.png",
+    "/images/visi.jpg",
+    "/images/visi.jpg",
+    "/images/visi.jpg",
+    "/images/visi.jpg",
+    "/images/visi.jpg",
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [transitionClass, setTransitionClass] = useState("");
+
+  const handleNext = () => {
+    if (currentIndex < images.length - 4) {
+      setTransitionClass(
+        "transition-all duration-300 ease-in-out transform translate-x-[-100%]"
+      ); // Set transition
+      setCurrentIndex(currentIndex + 4); // Change from 3 to 4
+      setTimeout(() => {
+        setTransitionClass(""); // Reset after transition
+      }, 300); // Match the duration with CSS transition time
+    }
+  };
+
+  const handlePrev = () => {
+    if (currentIndex > 0) {
+      setTransitionClass(
+        "transition-all duration-300 ease-in-out transform translate-x-[100%]"
+      ); // Set transition
+      setCurrentIndex(currentIndex - 4); // Change from 3 to 4
+      setTimeout(() => {
+        setTransitionClass(""); // Reset after transition
+      }, 300); // Match the duration with CSS transition time
+    }
+  };
+
   return (
-    <div className="carousel w-64">
-      <div id="slide1" className="carousel-item relative w-full">
-        <h1>SLIDE SATU</h1>
-        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide4" className="btn btn-circle">
-            ❮
-          </a>
-          <a href="#slide2" className="btn btn-circle">
-            ❯
-          </a>
+    <div className="relative w-full">
+      <div className="flex items-center justify-center relative">
+        <div
+          className={`grid sm:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-4 w-full overflow-hidden ${transitionClass}`}
+        >
+          {images.slice(currentIndex, currentIndex + 4).map((image, index) => (
+            <div key={index}>
+              <button
+                onClick={() =>
+                  document.getElementById("my_modal_4").showModal()
+                }
+              >
+                <Image
+                  src={image}
+                  alt="Gambar Pertanian Organik"
+                  width={1000}
+                  height={1000}
+                  className="rounded-lg"
+                />
+              </button>
+              {/* Open the modal using document.getElementById('ID').showModal() method */}
+
+              <dialog id="my_modal_4" className="modal">
+                <div className="modal-box">
+                  <h3 className="font-bold text-lg">Coming Soon</h3>
+                  <p className="py-4">Coming soon</p>
+                </div>
+                <form method="dialog" className="modal-backdrop">
+                  <button>close</button>
+                </form>
+              </dialog>
+            </div>
+          ))}
         </div>
-      </div>
-      <div id="slide2" className="carousel-item relative w-full">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-          className="w-full"
-        />
-        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide1" className="btn btn-circle">
-            ❮
-          </a>
-          <a href="#slide3" className="btn btn-circle">
-            ❯
-          </a>
-        </div>
-      </div>
-      <div id="slide3" className="carousel-item relative w-full">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-          className="w-full"
-        />
-        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide2" className="btn btn-circle">
-            ❮
-          </a>
-          <a href="#slide4" className="btn btn-circle">
-            ❯
-          </a>
-        </div>
-      </div>
-      <div id="slide4" className="carousel-item relative w-full">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-          className="w-full"
-        />
-        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide3" className="btn btn-circle">
-            ❮
-          </a>
-          <a href="#slide1" className="btn btn-circle">
-            ❯
-          </a>
-        </div>
+        {/* 
+        <div className="absolute bottom-[-70px] left-1/2 transform -translate-x-1/2 flex items-center">
+          <button
+            onClick={handlePrev}
+            className="btn btn-outline border-0 text-white bg-transparent disabled:bg-transparent"
+            disabled={currentIndex === 0}
+          >
+            Previous
+          </button>
+
+          <div className="border-l border-white/10 h-6 mx-2"></div>
+
+          <button
+            onClick={handleNext}
+            className="btn btn-outline border-0 text-white bg-transparent disabled:bg-transparent"
+            disabled={currentIndex >= images.length - 4}
+          >
+            Next
+          </button>
+        </div> */}
       </div>
     </div>
   );
