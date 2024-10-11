@@ -14,10 +14,10 @@ export default function App() {
   return (
     <>
       <Swiper
-        spaceBetween={-50}
+        spaceBetween={0}
         navigation={true}
         modules={[Navigation]}
-        className="mySwiper !pb-2"
+        className="mySwiper"
         slidesPerView={1}
         breakpoints={{
           1024: {

@@ -11,7 +11,7 @@ const Card = ({ data }) => {
           document.getElementById(`my_modal_cert_${data.id}`).showModal()
         }
       >
-        <div className="card card-compact bg-base-100 w-96 shadow-md hover:shadow-xl">
+        <div className="card card-compact bg-base-100 sm:w-96 w-64 shadow-md hover:shadow-xl">
           <figure>
             <Image
               src={data.imageUrl}
