@@ -42,7 +42,7 @@ export default async function RootLayout({ children, params: { locale } }) {
       >
         <NextIntlClientProvider messages={messages}>
           {/* Navbar stays at the top */}
-          <NavbarComponent />
+          {/* <NavbarComponent /> */}
 
           {/* Main content area will grow to take up remaining space */}
           <main className="flex-grow">{children}</main>
