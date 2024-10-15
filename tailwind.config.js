@@ -17,8 +17,15 @@ module.exports = {
       },
     },
   },
+  variants: {
+    extend: {
+      backgroundColor: ["disabled"],
+      textColor: ["disabled"],
+      cursor: ["disabled"],
+    },
+  },
   daisyui: {
-    themes: ["light", "dark", "cupcake"],
+    themes: ["light", "dark"],
   },
   plugins: [daisyui],
 };

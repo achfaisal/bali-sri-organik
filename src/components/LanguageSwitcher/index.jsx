@@ -2,7 +2,7 @@ import { useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
 import { Translate } from "@phosphor-icons/react";
-import DropdownIcon from "../Icons/Dropdown";
+import DropdownIcon from "../Icons/DropdownIcon";
 
 const LanguageSwitcher = ({ isScrolled }) => {
   const router = useRouter();
@@ -23,13 +23,9 @@ const LanguageSwitcher = ({ isScrolled }) => {
         <div className="dropdown dropdown-bottom dropdown-end">
           <div
             tabIndex={0}
-            className={`p-2 m-1 font-normal rounded-full cursor-pointer ${
-              isScrolled
-                ? "bg-black/10 hover:bg-black/20"
-                : "bg-white/10 hover:bg-white/20"
-            } backdrop-blur-sm transition-all duration-75`}
+            className={`p-2 border font-normal rounded-full cursor-pointer bg-transparent`}
           >
-            <div className="flex items-center">
+            <div className="flex items-center justify-center">
               <Translate />
               {localActive === "en" ? (
                 <span className="mx-2"> EN</span>

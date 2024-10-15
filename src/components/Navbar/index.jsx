@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import LanguageSwitcher from "../LanguageSwitcher";
 import Drawer from "../Drawer";
-import Dropdown from "../Dropdown";
 import { useTranslations } from "next-intl";
 
 const NavbarComponent = () => {
@@ -77,30 +76,6 @@ const NavbarComponent = () => {
               </Link>
             ))}
 
-            {/* <Link className="hover:text-green-500" href="/about-us">
-              About Us
-            </Link>
-            <Link className="hover:text-green-500" href="/coming-soon">
-              Fertilizer & Seeds
-            </Link>
-            <Link className="hover:text-green-500" href="/coming-soon">
-              Agricultural Services
-            </Link>
-            <Link className="hover:text-green-500" href="/coming-soon">
-              Conversion Rice
-            </Link>
-            <Link className="hover:text-green-500" href="/coming-soon">
-              Organic Rice
-            </Link>
-            <Link className="hover:text-green-500" href="/coming-soon">
-              Terrice
-            </Link>
-            <Link className="hover:text-green-500" href="/coming-soon">
-              Ready to Eat
-            </Link>
-            <Link className="hover:text-green-500" href="/coming-soon">
-              Contact Us
-            </Link> */}
             <div>
               <LanguageSwitcher isScrolled={isScrolled} />
             </div>

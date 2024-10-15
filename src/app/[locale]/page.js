@@ -1,18 +1,21 @@
-import Timeline from "@/components/Timeline";
-import Section1 from "@/components/Section1";
-import Section2 from "@/components/Section2";
-import Section3 from "@/components/Section3";
+import Hero from "@/components/Hero";
+import { useTranslations } from "next-intl";
 
-export default function Home() {
+import AdvantageSection from "@/components/Section/AdvantageSection";
+import GridCarousel from "@/components/Carousel/GridSwiper";
+import ClientSection from "@/components/Section/BackgroundBlurSection";
+import Timeline from "@/components/Timeline";
+import BackgroundBlurSection from "@/components/Section/BackgroundBlurSection";
+
+export default function App() {
+  const t = useTranslations("HomeSectionOne");
   return (
     <>
-      {/* <NavbarComponent /> */}
+      <Hero text={t} imageUrl={"/images/gambar-1.jpg"} />
 
-      <Section1 />
-      <Section2 />
-
+      <AdvantageSection />
       <Timeline />
-      <Section3 />
+      <BackgroundBlurSection title={"Judul"} content={<GridCarousel />} />
     </>
   );
 }

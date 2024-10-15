@@ -18,7 +18,7 @@ const Section3 = () => {
             background: `rgba(${[110, 110, 110, 0.7]})`,
           }}
         >
-          <div className="text-white w-full container mx-auto px-4 py-12">
+          <div className="text-white w-full container mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className=" flex text-3xl font-bold mb-12 justify-center items-center align-middle w-full">
               Our Client
             </h1>
@@ -29,7 +29,6 @@ const Section3 = () => {
                 height={132}
                 src="/images/Lotte.png"
                 alt="Logo Lotte"
-                // className="h-[144px] w-[122px]"
               />
               <Image
                 width={180}
@@ -53,7 +52,7 @@ const Section3 = () => {
                 width={200}
                 height={200}
                 src="/images/logo-market.png"
-                alt="Logo Grand Lucky"
+                alt="Logo Market"
               />
             </div>
           </div>

@@ -1,7 +1,7 @@
 {
   "Navbar": [
     { "title": "About Us", "link": "/about-us" },
-    { "title": "Fertilizer & Seeds", "link": "/coming-soon" },
+    { "title": "Fertilizer & Seeds", "link": "/fertilizer-and-seeds" },
     { "title": "Agricultural Services", "link": "/coming-soon" },
     { "title": "Conversion Rice", "link": "/coming-soon" },
     { "title": "Organic Rice", "link": "/coming-soon" },
@@ -9,10 +9,12 @@
     { "title": "Ready to Eat", "link": "/coming-soon" },
     { "title": "Contact Us", "link": "/coming-soon" }
   ],
+
   "HomeSectionOne": {
     "title": "Organic Farming.",
     "description": "Organic farming is farming in harmony with nature, using materials avai lable from nature and avoiding or limiting synthetic chemicals, with the goal of providing agricultural products that are safe for health and maintaining environmental balance and natural cycles, while adhering to the 4 principles of organic farming."
   },
+
   "HomeSectionTwo": {
     "title": "Advantages of Organic Farming in Bali",
     "description": [
@@ -23,6 +25,7 @@
       "Vast agricultural land, approximately 150,000 hectares."
     ]
   },
+
   "Timeline": [
     {
       "year": "2012 - 2016",
@@ -41,6 +44,7 @@
       "content": "With nearly 200 hectares of certified land and approximately 800,000 kg of annual production, we are striving to make Bali the first organic island in the world, focusing on downstream processing with sustainable and environmentally friendly methods."
     }
   ],
+
   "AboutUs": {
     "title": "About Us",
     "description": "PT. Bali Sri Organik was established in 2012 and is part of the Medco Group, operating in the agricultural sector with the goal of becoming a reliable organic producer in Indonesia, especially in Bali. \nFactors such as land use changes, increasing population, the use of inorganic fertilizers that reduce soil fertility, the lack of farmer welfare, limited information about organic farming methods, the increase in tourists each year, and the Bali Go Organic government program motivated us to contribute to addressing these issues.\nAfter careful and thorough research and surveys conducted by experts, PT. Bali Sri Organik was founded in 2012.",
@@ -56,6 +60,7 @@
     "Certificate": "Certification",
     "Certificate-description": "Since 2017, we have obtained both National and International standard certifications."
   },
+
   "Certificate": [
     {
       "id": "1",
@@ -93,6 +98,24 @@
       "imageUrl": "https://drive.google.com/uc?export=view&id=1FhXEoUrCylqtDeZHRQQN2eYEUe5ti3E8"
     }
   ],
+
+  "Fertilizer & Seeds": {
+    "title": "Fertilizer & Seeds",
+    "data": [
+      {
+        "title": "Fertilization",
+        "description": "The advantage of organic farming is its harmony with nature. About 90% of fertilization comes from natural materials, and most of what we use is organic waste from households and the horeca sector. These materials are managed by experts from various fields, with in-depth research, resulting in high-quality fertilizers.",
+        "imageHeroUrl": "",
+        "link": "/fertilizer-and-seeds"
+      },
+      {
+        "title": "Seed Production",
+        "description": "To maintain product quality, we produce our own certified rice seeds, ensuring that farmers receive seeds of guaranteed quality.",
+        "imageHeroUrl": "",
+        "link": "/fertilizer-and-seeds"
+      }
+    ]
+  },
 
   "Products": [
     {

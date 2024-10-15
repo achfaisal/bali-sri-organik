@@ -1,7 +1,7 @@
 {
   "Navbar": [
     { "title": "Tentang Kami", "link": "/about-us" },
-    { "title": "Pupuk & Benih", "link": "/coming-soon" },
+    { "title": "Pupuk & Benih", "link": "/fertilizer-and-seeds" },
     { "title": "Layanan Pertanian", "link": "/coming-soon" },
     { "title": "Beras Konversi", "link": "/coming-soon" },
     { "title": "Beras Organik", "link": "/coming-soon" },
@@ -93,6 +93,23 @@
       "imageUrl": "https://drive.google.com/uc?export=view&id=1FhXEoUrCylqtDeZHRQQN2eYEUe5ti3E8"
     }
   ],
+  "Fertilizer & Seeds": {
+    "title": "Pupuk & Benih",
+    "data": [
+      {
+        "title": "Pupuk",
+        "description": "Keunggulan pertanian organik adalah keselarasan dengan alam. Sekitar 90% dari pemupukan berasal dari bahan-bahan alami, dan sebagian besar yang kami gunakan adalah sampah organik dari rumah tangga dan sektor horeca. Bahan-bahan ini dikelola oleh para ahli dari berbagai bidang, dengan riset mendalam, sehingga pupuk yang dihasilkan berkualitas tinggi.",
+        "imageHeroUrl": "",
+        "link": "/fertilizer-and-seeds"
+      },
+      {
+        "title": "Benih",
+        "description": "Untuk menjaga kualitas produk, kami memproduksi bibit padi bersertifikat sendiri, sehingga para petani mendapatkan bibit yang terjamin mutunya.",
+        "imageHeroUrl": "",
+        "link": "/fertilizer-and-seeds"
+      }
+    ]
+  },
   "Products": [
     {
       "product": "Beras Menthik Susu",

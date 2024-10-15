@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const Hero = ({ text }) => {
+const Hero = ({ text, imageUrl }) => {
   // Split the description into paragraphs
   const paragraphs = text("description")
     .split("\n")
@@ -9,13 +9,12 @@ const Hero = ({ text }) => {
 
   return (
     <section>
-      <div className="relative mt-[-5rem]">
+      <div className="relative">
         {/* Background Image */}
         <Image
-          src="/images/gambar-1.jpg" // Absolute path to the image
+          src={imageUrl}
           alt="Background image"
           fill="true"
-          quality={100} // Optional: To ensure the best quality
           priority // Optional: Loads this image as a priority
           className="z-0"
         />

@@ -1,79 +1,59 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import DropdownIcon from "../Icons/Dropdown";
+import { useState } from "react";
+import DropdownIcon from "../Icons/DropdownIcon"; // Adjust the import based on your project structure
 import { Link } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
 
-const Dropdown = () => {
+const Dropdown = ({ switcher, displayedText, options }) => {
+  const data = switcher ? switcher() : { displayedText, options };
+
+  // State to control dropdown visibility
   const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef(null);
-  const navbar = useTranslations("Navbar");
-  const products = useTranslations().raw("Products");
 
-  const toggleDropdown = () => {
-    setIsOpen((prevIsOpen) => !prevIsOpen);
-  };
-
+  // Function to close the dropdown
   const closeDropdown = () => {
     setIsOpen(false);
   };
 
-  // Close dropdown when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        closeDropdown();
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
   return (
     <div
-      className={`dropdown dropdown-hover ${isOpen ? "dropdown-open" : ""}`}
-      ref={dropdownRef}
+      className="dropdown dropdown-hover dropdown-end"
+      onMouseEnter={() => setIsOpen(true)} // Open on hover
+      onMouseLeave={closeDropdown} // Close when not hovering
     >
       <div
         tabIndex={0}
         role="button"
-        className="border-0 shadow-none"
-        onClick={toggleDropdown}
+        className="m-1"
+        onClick={() => setIsOpen(!isOpen)} // Toggle dropdown on click
       >
-        <div className="flex items-center">
-          <div className="mr-2">{navbar("products")}</div>
+        {data.displayedText}
+        <span className="pl-1">
           <DropdownIcon />
-        </div>
+        </span>
       </div>
+
       {isOpen && (
-        <div>
-          <ul
-            tabIndex={0}
-            className="dropdown-content menu bg-base-200 z-[1] p-2 shadow rounded-box w-56 mt-3 text-black"
-          >
-            <li>
-              <a className="btn-disabled font-semibold">
-                {navbar("product-one")}
-              </a>
-              <ul>
-                {products.map((item, index) => (
-                  <li key={index}>
-                    <Link
-                      href={`/products/${item.link}`}
-                      onClick={closeDropdown}
-                    >
-                      {item.product}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+        <ul className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+          {data.options.map((data, index) => (
+            <li key={index}>
+              {data.link ? (
+                <Link href={data.link} onClick={closeDropdown}>
+                  {data.title || data.label}
+                </Link>
+              ) : (
+                <button
+                  onClick={() => {
+                    data.onSelect(); // Perform the action
+                    closeDropdown(); // Close the dropdown
+                  }}
+                >
+                  {data.title || data.label}
+                </button>
+              )}
             </li>
-          </ul>
-        </div>
+          ))}
+        </ul>
       )}
     </div>
   );
