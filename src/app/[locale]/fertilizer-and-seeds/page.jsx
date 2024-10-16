@@ -36,7 +36,6 @@ const FertilizerSeeds = () => {
                   </p>
                 </div>
               </div>
-              <div className="divider"></div>
             </div>
           </div>
 

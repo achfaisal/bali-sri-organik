@@ -5,7 +5,6 @@ import TitleTwo from "../Title/titleTwo";
 
 const AdvantageSection = () => {
   const t = useTranslations("HomeSectionTwo");
-  const title = t("title");
 
   return (
     <section className="bg-[url('/images/backdrop.png'),url('/images/backdrop.png')] sm:bg-[position:-250px_top,calc(100%+250px)_top] bg-[position:-250px_top,calc(100%+250px)_center] bg-[length:500px,500px] bg-no-repeat">

@@ -4,8 +4,7 @@ import { useState, useEffect } from "react";
 import { Link } from "@/i18n/routing";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import LanguageSwitcher from "../LanguageSwitcher";
-import Drawer from "../Drawer";
+
 import { useTranslations } from "next-intl";
 
 const NavbarComponent = () => {
@@ -75,14 +74,8 @@ const NavbarComponent = () => {
                 {navbar.title}
               </Link>
             ))}
-
-            <div>
-              <LanguageSwitcher isScrolled={isScrolled} />
-            </div>
           </div>
-          <div className="2xl:hidden mr-4">
-            <Drawer />
-          </div>
+          <div className="2xl:hidden mr-4"></div>
         </div>
       </div>
     </div>

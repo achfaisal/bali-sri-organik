@@ -2,9 +2,8 @@ import React from "react";
 import Hero from "@/components/Hero";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import Modal from "@/components/Modal";
 import Pagination from "@/components/Pagination";
-import Carousel from "@/components/Carousel";
+import Modal from "@/components/Modal";
 
 const AboutUs = () => {
   const aboutUs = useTranslations("AboutUs");
@@ -14,7 +13,7 @@ const AboutUs = () => {
     <>
       <Hero text={aboutUs} />
 
-      <div className="container mx-auto p-4">
+      {/* <div className="container mx-auto p-4">
         <div className="relative text-black">
           <div>
             <div className="flex items-center justify-between gap-10 flex-col lg:flex-row py-20">
@@ -62,7 +61,6 @@ const AboutUs = () => {
               background: `rgba(${[110, 110, 110, 0.7]})`,
             }}
           >
-            {/* <div className="container mx-auto p-4"> */}
             <div className="container mx-auto p-4">
               <div className="pt-16 pb-32">
                 <div className="text-center text-white">
@@ -73,9 +71,7 @@ const AboutUs = () => {
                     {aboutUs("Raw-material-description")}
                   </p>
                 </div>
-                <div className="">
-                  <Carousel />
-                </div>
+                <Modal />
               </div>
             </div>
             <div className="divider m-0 text-white before:bg-white/20 after:bg-white/20"></div>
@@ -90,15 +86,11 @@ const AboutUs = () => {
                     {aboutUs("Farming-tools-description")}
                   </p>
                 </div>
-                <div className="">
-                  <Carousel />
-                </div>
               </div>
-              {/* </div> */}
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <div>
         <div className="container mx-auto px-4 py-20 text-center">

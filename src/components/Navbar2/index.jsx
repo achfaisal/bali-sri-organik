@@ -1,8 +1,7 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
-import { useLocale } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
 import Dropdown from "../Dropdown";
 import LanguageSwitcher from "@/utils/LanguageSwitcher";
@@ -11,20 +10,38 @@ import HamburgerIcon from "@/components/Icons/HamburgerIcon";
 
 export default function Navbar2() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const t = useTranslations();
   const navbarData = t.raw("Navbar");
   const fertilizerAndSeeds = t.raw("Fertilizer & Seeds");
   const { options } = LanguageSwitcher();
   const localeActive = useLocale();
-  console.log(localeActive);
-  console.log(options);
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="sticky top-0 z-[100] bg-white shadow-md">
+    <nav
+      className={`sticky top-0 z-[100] transition-colors duration-300 ${
+        isScrolled ? "bg-white shadow-md" : "bg-transparent"
+      }`}
+    >
       {/* Navbar content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-2">
@@ -126,7 +143,7 @@ export default function Navbar2() {
                   {options.map((data, index) => (
                     <li key={index}>
                       <button
-                        className="disabled:text-gray-600"
+                        className="disabled:text-gray-600 disabled:cursor-not-allowed"
                         disabled={localeActive == data.value}
                         onClick={() => {
                           data.onSelect();
