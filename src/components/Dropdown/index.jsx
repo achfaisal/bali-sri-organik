@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import DropdownIcon from "../Icons/DropdownIcon"; // Adjust the import based on your project structure
+import DropdownIcon from "@/components/Icons/DropdownIcon"; // Adjust the import based on your project structure
 import { Link } from "@/i18n/routing";
 
-const Dropdown = ({ switcher, displayedText, options }) => {
+const Dropdown = ({ switcher, displayedText, options, isScrolled }) => {
   const data = switcher ? switcher() : { displayedText, options };
 
   // State to control dropdown visibility
@@ -24,7 +24,11 @@ const Dropdown = ({ switcher, displayedText, options }) => {
       <div
         tabIndex={0}
         role="button"
-        className="m-1"
+        className={`${
+          isScrolled
+            ? "text-gray-700 hover:text-gray-900"
+            : "text-gray-50 hover:text-gray-200"
+        } m-1`}
         onClick={() => setIsOpen(!isOpen)} // Toggle dropdown on click
       >
         {data.displayedText}

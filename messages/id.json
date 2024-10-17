@@ -58,37 +58,37 @@
   },
   "Certificate": [
     {
-      "id": "1",
+      "id": "cert_1",
       "name": "Sertifikat LeSOS",
       "imageUrl": "https://drive.google.com/uc?export=view&id=1lIPBFhDQwy5LDzSsigFSHWTy2oBrmGoU"
     },
     {
-      "id": "2",
+      "id": "cert_2",
       "name": "Sertifikat Internasional EU & IFOAM",
       "imageUrl": "https://drive.google.com/uc?export=view&id=11YAx6ZVZdht4664e7wqbNMvesFZ_Kgrc"
     },
     {
-      "id": "3",
+      "id": "cert_3",
       "name": "Sertifikat Organik Nasional ICERT",
       "imageUrl": "https://drive.google.com/uc?export=view&id=1SjChY5v_CoCZXQd-6bZeRLsb5pQRyfLP"
     },
     {
-      "id": "4",
+      "id": "cert_4",
       "name": "Sertifikat Pelatih",
       "imageUrl": "https://drive.google.com/uc?export=view&id=1gZzm85FxmGfKW-PqP8LnIIMg7x-AFQhS"
     },
     {
-      "id": "5",
+      "id": "cert_5",
       "name": "Sertifikat PSAT",
       "imageUrl": "https://drive.google.com/uc?export=view&id=16TQlbUtZEWYxPudEpfKWmjG3pouT3dSi"
     },
     {
-      "id": "6",
+      "id": "cert_6",
       "name": "Sertifikat Uji Beras Organik",
       "imageUrl": "https://drive.google.com/uc?export=view&id=1ekxj3-m9H4TG3oVS1DPm210c1TjZZPsE"
     },
     {
-      "id": "7",
+      "id": "cert_7",
       "name": "Sertifikat SUCOFINDO",
       "imageUrl": "https://drive.google.com/uc?export=view&id=1FhXEoUrCylqtDeZHRQQN2eYEUe5ti3E8"
     }
@@ -100,13 +100,13 @@
         "title": "Pupuk",
         "description": "Keunggulan pertanian organik adalah keselarasan dengan alam. Sekitar 90% dari pemupukan berasal dari bahan-bahan alami, dan sebagian besar yang kami gunakan adalah sampah organik dari rumah tangga dan sektor horeca. Bahan-bahan ini dikelola oleh para ahli dari berbagai bidang, dengan riset mendalam, sehingga pupuk yang dihasilkan berkualitas tinggi.",
         "imageHeroUrl": "",
-        "link": "/fertilizer-and-seeds"
+        "link": "/fertilizer"
       },
       {
         "title": "Benih",
         "description": "Untuk menjaga kualitas produk, kami memproduksi bibit padi bersertifikat sendiri, sehingga para petani mendapatkan bibit yang terjamin mutunya.",
         "imageHeroUrl": "",
-        "link": "/fertilizer-and-seeds"
+        "link": "/seeds"
       }
     ]
   },

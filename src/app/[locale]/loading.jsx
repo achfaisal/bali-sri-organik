@@ -1,6 +1,6 @@
 const loading = () => {
   return (
-    <div className="">
+    <div className="min-h-screen">
       <span className="loading loading-spinner"></span>
     </div>
   );

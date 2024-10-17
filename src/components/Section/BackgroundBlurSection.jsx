@@ -1,6 +1,7 @@
 import Image from "next/image";
 
-const BackgroundBlurSection = ({ title, content }) => {
+const BackgroundBlurSection = ({ children }) => {
+  // Accept children instead of content
   return (
     <section className="flex flex-col">
       <div className="relative">
@@ -13,17 +14,14 @@ const BackgroundBlurSection = ({ title, content }) => {
           }}
         />
         <div
-          className="backdrop-blur"
+          className="backdrop-blur-xl"
           style={{
             background: `rgba(${[110, 110, 110, 0.7]})`,
           }}
         >
-          <div className="text-white container mx-auto">
-            <div className="py-10">
-              <h1 className="text-4xl font-semibold text-center pb-6">
-                {title}
-              </h1>
-              {content}
+          <div className="text-white">
+            <div className="">
+              {children} {/* Render children here */}
             </div>
           </div>
         </div>

@@ -5,10 +5,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
-import { Grid, Pagination } from "swiper/modules";
+import { Autoplay, Grid, Pagination } from "swiper/modules";
 import Image from "next/image";
 
-export default function GridCarousel() {
+export default function GridSwiper({ data }) {
   return (
     <section>
       <Swiper
@@ -16,7 +16,11 @@ export default function GridCarousel() {
         pagination={{
           clickable: true,
         }}
-        modules={[Grid, Pagination]}
+        modules={[Autoplay, Grid, Pagination]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         breakpoints={{
           640: {
             // Mobile view
@@ -42,56 +46,18 @@ export default function GridCarousel() {
         }}
         className="mySwiper h-80"
       >
-        <SwiperSlide className="">
-          <div className="flex justify-center items-center h-full">
-            <Image
-              width={110}
-              height={132}
-              src="/images/Lotte.png"
-              alt="Logo Lotte"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex justify-center items-center h-full">
-            <Image
-              width={180}
-              height={60}
-              src="/images/logo-growell.png"
-              alt="Logo Growell"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex justify-center items-center h-full">
-            <Image
-              width={200}
-              height={200}
-              src="/images/logo-rambla.png"
-              alt="Logo Rambla"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex justify-center items-center h-full">
-            <Image
-              width={200}
-              height={200}
-              src="/images/logo-grand-lucky.png"
-              alt="Logo Grand Lucky"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex justify-center items-center h-full">
-            <Image
-              width={200}
-              height={200}
-              src="/images/logo-market.png"
-              alt="Logo Market"
-            />
-          </div>
-        </SwiperSlide>
+        {data.map((image, index) => (
+          <SwiperSlide key={index}>
+            <div className="flex justify-center items-center h-full">
+              <Image
+                width={image.width}
+                height={image.height}
+                src={image.imageUrl}
+                alt="Logo Company"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   );
