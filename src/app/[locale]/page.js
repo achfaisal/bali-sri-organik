@@ -6,6 +6,7 @@ import GridSwiper from "@/components/Swiper/GridSwiper";
 import Timeline from "@/components/Timeline";
 import BackgroundBlurSection from "@/components/Section/BackgroundBlurSection";
 import SpanDotSection from "@/components/Section/SpanDotSection";
+import AdvantageSection2 from "@/components/Section/AdvantageSection2";
 
 export default function App() {
   const t = useTranslations("HomeSectionOne");
@@ -30,16 +31,17 @@ export default function App() {
         imageUrl={"/images/gambar-1.jpg"}
         content={<SpanDotSection />}
       />
-      <AdvantageSection />
+      {/* <AdvantageSection /> */}
+      <AdvantageSection2 />
       <Timeline />
-      <BackgroundBlurSection>
-        <h1 className="text-center font-semibold text-4xl pt-10 pb-2">
+      <div className="bg-slate-600">
+        <h1 className="text-center font-semibold text-4xl pt-6 pb-2 text-white">
           {localeActive == "en" ? "Our Clients" : "Klien Kami"}
         </h1>
-        <div className="pb-10">
+        <div className="pb-4">
           <GridSwiper data={imagesClient} />
         </div>
-      </BackgroundBlurSection>
+      </div>
     </div>
   );
 }

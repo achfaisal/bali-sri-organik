@@ -89,7 +89,6 @@ const AboutUs = () => {
               renderComponent={(slide) => <CardWithoutBody props={slide} />}
             />
           </div>
-          {/* <ImageGallery /> */}
         </div>
       </BackgroundBlurSection>
 

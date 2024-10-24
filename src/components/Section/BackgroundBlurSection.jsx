@@ -14,7 +14,7 @@ const BackgroundBlurSection = ({ children }) => {
           }}
         />
         <div
-          className="backdrop-blur-xl"
+          className="backdrop-blur-3xl"
           style={{
             background: `rgba(${[110, 110, 110, 0.7]})`,
           }}

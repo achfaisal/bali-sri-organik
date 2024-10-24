@@ -12,39 +12,40 @@ export default function GridSwiper({ data }) {
   return (
     <section>
       <Swiper
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Autoplay, Grid, Pagination]}
+        spaceBetween={0}
+        modules={[Autoplay, Grid]}
         autoplay={{
-          delay: 2500,
+          delay: 2000,
           disableOnInteraction: false,
         }}
+        loop={true}
         breakpoints={{
           640: {
-            // Mobile view
             slidesPerView: 1,
             grid: {
-              rows: 1, // Set grid to 1 row for mobile
+              rows: 1,
             },
           },
           768: {
-            // Tablet view
             slidesPerView: 2,
             grid: {
-              rows: 2, // Set grid to 2 rows for tablet
+              rows: 1,
             },
           },
           1024: {
-            // Default for larger screens
             slidesPerView: 3,
             grid: {
-              rows: 2, // Set grid to 2 rows for larger screens
+              rows: 1,
+            },
+          },
+          1280: {
+            slidesPerView: 4,
+            grid: {
+              rows: 1,
             },
           },
         }}
-        className="mySwiper h-80"
+        className="mySwiper h-40"
       >
         {data.map((image, index) => (
           <SwiperSlide key={index}>
