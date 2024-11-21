@@ -4,17 +4,18 @@ const BackgroundBlurSection = ({ children }) => {
   // Accept children instead of content
   return (
     <section className="flex flex-col">
-      <div className="relative">
+      <div className="relative rounded-2xl">
         <Image
           fill={true}
           src="/images/gambar-1.jpg"
           alt="Background Image"
           style={{
             objectFit: "cover",
+            borderRadius: "16px",
           }}
         />
         <div
-          className="backdrop-blur-3xl"
+          className="backdrop-blur-3xl rounded-2xl"
           style={{
             background: `rgba(${[110, 110, 110, 0.7]})`,
           }}

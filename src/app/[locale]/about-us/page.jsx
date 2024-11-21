@@ -60,7 +60,7 @@ const AboutUs = () => {
         <LeftImageSection data={aboutUs} />
       </div>
 
-      <BackgroundBlurSection>
+      <div className="bg-radial-gradient">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="font-semibold text-4xl pt-16">
@@ -76,7 +76,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="divider m-0 text-white before:bg-white/20 after:bg-white/20"></div>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 pb-16 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="font-semibold text-4xl pt-16">
               {aboutUs("Farming-tools")}
@@ -90,7 +90,7 @@ const AboutUs = () => {
             />
           </div>
         </div>
-      </BackgroundBlurSection>
+      </div>
 
       <div className="container mx-auto px-4 py-20 text-center">
         <div>

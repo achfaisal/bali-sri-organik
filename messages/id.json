@@ -9,20 +9,38 @@
     { "title": "Siap Santap", "link": "/coming-soon" },
     { "title": "Hubungi Kami", "link": "/coming-soon" }
   ],
+
   "HomeSectionOne": {
     "title": "Pertanian Organik.",
     "description": "Bertani organik merupakan bertani selaras dengan alam , dengan menggunakan bahan yang tersedia dari alam dan menghindari atau membatasi bahan kimia sintetis, dengan tujuan menyediakan produk - produk pertanian yang aman bagi kesehatan serta menjaga keseimbangan lingkungan dan siklis alamnya. dengan memegang 4 prinsip organik."
   },
+
   "HomeSectionTwo": {
-    "title": "Keunggulan Pertanian Organik Bali",
-    "description": [
-      "Peluang ekspor yang sangat tinggi dikarenakan banyak wisatawan dan acara manca negara.",
-      "Pulau dengan adat istiadat yang kental, memudahkan untuk menerapkan konsep pertanian Organik.",
-      "Dukungan pemerintah Provinsi bali dengan disahkan undang - undang Bali menjadi pulau Organik.",
-      "Sistem perairan Subak yang sudah menjadi warisan dunia.",
-      "Lahan pertanian yang masih sangat luas +/- 150.000 Ha."
+    "title": "Keuntungan Pertanian Organik di Bali",
+    "advantage": [
+      {
+        "title": "Potensi Ekspor yang Tinggi",
+        "body": "Potensi ekspor yang sangat tinggi karena banyaknya wisatawan internasional dan acara yang diadakan."
+      },
+      {
+        "title": "Warisan Budaya yang Kuat",
+        "body": "Warisan budaya yang kuat memudahkan penerapan konsep pertanian organik."
+      },
+      {
+        "title": "Dukungan Pemerintah Provinsi Bali",
+        "body": "Dukungan dari pemerintah provinsi Bali dengan disahkannya undang-undang yang menetapkan Bali sebagai pulau organik."
+      },
+      {
+        "title": "Sistem Irigasi Subak",
+        "body": "Sistem irigasi Subak, yang merupakan warisan dunia."
+      },
+      {
+        "title": "Lahan Pertanian yang Luas",
+        "body": "Lahan pertanian yang luas, sekitar 150.000 hektar."
+      }
     ]
   },
+
   "Timeline": [
     {
       "year": "2012 - 2016",

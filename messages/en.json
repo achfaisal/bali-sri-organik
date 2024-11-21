@@ -17,12 +17,27 @@
 
   "HomeSectionTwo": {
     "title": "Advantages of Organic Farming in Bali",
-    "description": [
-      "Very high export potential due to the many international tourists and events.",
-      "A strong cultural heritage makes it easier to apply the concept of organic farming.",
-      "Support from the Bali provincial government with the passing of a law declaring Bali as an organic island.",
-      "The Subak irrigation system, which is a world heritage.",
-      "Vast agricultural land, approximately 150,000 hectares."
+    "advantage": [
+      {
+        "title": "High Export Potential",
+        "body": "Very high export potential due to the many international tourists and events."
+      },
+      {
+        "title": "Strong Cultural Heritage",
+        "body": "A strong cultural heritage makes it easier to apply the concept of organic farming."
+      },
+      {
+        "title": "Support from Bali Provincial Government",
+        "body": "Support from the Bali provincial government with the passing of a law declaring Bali as an organic island."
+      },
+      {
+        "title": "Subak Irrigation System",
+        "body": "The Subak irrigation system, which is a world heritage."
+      },
+      {
+        "title": "Vast Agricultural Land",
+        "body": "Vast agricultural land, approximately 150,000 hectares."
+      }
     ]
   },
 

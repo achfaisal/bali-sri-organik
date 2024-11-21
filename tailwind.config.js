@@ -15,6 +15,10 @@ module.exports = {
       screen: {
         xs: "400px",
       },
+      backgroundImage: {
+        "radial-gradient":
+          "radial-gradient(circle, rgba(122,122,122,1) 0%, rgba(197,219,245,1) 100%)",
+      },
     },
   },
   variants: {

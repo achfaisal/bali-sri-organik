@@ -2,8 +2,24 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import ImageGallery from "@/components/Section/ImageGallery";
+import BackgroundImage from "next/image";
+import BackgroundBlurSection from "@/components/Section/BackgroundBlurSection";
+import { useTranslations } from "next-intl";
 
 const AdvantageSection2 = () => {
+  const t = useTranslations();
+  const advantage = t.raw("HomeSectionTwo.advantage");
+
+  const images = [
+    "/images/world-icon.png",
+    "/images/culture-icon.png",
+    "/images/scale-icon.png",
+    "/images/water-icon.png",
+    "/images/land-icon.png",
+  ];
+
   return (
     <>
       <section className="py-12 bg-white">
@@ -19,67 +35,22 @@ const AdvantageSection2 = () => {
               organic farming.
             </p>
           </div>
-
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2 lg:w-1/2">
-            {/* Language Understanding */}
-            <div className="p-6 bg-gray-50 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2">
-                Language Understanding
-              </h3>
-              <p className="text-gray-700">
-                SmartAssist harnesses the power of advanced Natural Language
-                Processing (NLP) to understand and interpret human language
-                seamlessly.
-              </p>
-            </div>
-
-            {/* Intelligent Virtual Assistant */}
-            <div className="p-6 bg-gray-50 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2">
-                Intelligent Virtual Assistant
-              </h3>
-              <p className="text-gray-700">
-                Meet IntelliConnect, your AI-driven personal assistant. It
-                organizes your schedule, answers questions, and adapts to your
-                preferences.
-              </p>
-            </div>
-
-            {/* Personalized User Experience */}
-            <div className="p-6 bg-gray-50 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2">
-                Personalized User Experience
-              </h3>
-              <p className="text-gray-700">
-                Discover IntelliConnect: personalized tech that learns from you,
-                tailoring content and streamlining tasks for a unique user
-                experience.
-              </p>
-            </div>
-
-            {/* Voice Command Capabilities */}
-            <div className="p-6 bg-gray-50 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2">
-                Voice Command Capabilities
-              </h3>
-              <p className="text-gray-700">
-                Effortlessly command your digital world with IntelliConnect's
-                speech recognition. Speak for messaging, calls, and tasks – your
-                voice is the key.
-              </p>
-            </div>
-
-            {/* Point 5 */}
-            <div className="p-6 bg-gray-50 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2">
-                Voice Command Capabilities
-              </h3>
-              <p className="text-gray-700">
-                Effortlessly command your digital world with IntelliConnect's
-                speech recognition. Speak for messaging, calls, and tasks – your
-                voice is the key.
-              </p>
-            </div>
+            {advantage.map((data, index) => (
+              <div className="p-6 rounded-2xl shadow-md" key={index}>
+                <Image
+                  src={images[index]}
+                  alt="advantage-icon"
+                  height={60}
+                  width={60}
+                  className="pb-2"
+                />
+                <h3 className="text-xl font-semibold mb-2">{data.title}</h3>
+                <div>
+                  <p>{data.body}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

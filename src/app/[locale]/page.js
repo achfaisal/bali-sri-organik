@@ -36,7 +36,7 @@ export default function App() {
       <Timeline />
       <div className="bg-slate-600">
         <h1 className="text-center font-semibold text-4xl pt-6 pb-2 text-white">
-          {localeActive == "en" ? "Our Clients" : "Klien Kami"}
+          {localeActive === "en" ? "Our Partners" : "Partner Kami"}
         </h1>
         <div className="pb-4">
           <GridSwiper data={imagesClient} />
