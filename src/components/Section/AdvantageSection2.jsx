@@ -13,11 +13,11 @@ const AdvantageSection2 = () => {
   const advantage = t.raw("HomeSectionTwo.advantage");
 
   const images = [
-    "/images/world-icon.png",
-    "/images/culture-icon.png",
-    "/images/scale-icon.png",
-    "/images/water-icon.png",
-    "/images/land-icon.png",
+    "/images/advantages-icon/1.png",
+    "/images/advantages-icon/2.png",
+    "/images/advantages-icon/3.png",
+    "/images/advantages-icon/4.png",
+    "/images/advantages-icon/5.png",
   ];
 
   return (
